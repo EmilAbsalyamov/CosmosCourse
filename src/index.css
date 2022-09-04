@@ -95,3 +95,19 @@ a {
   margin-left: 5px;
   color: black;
 }
+
+.topicsList {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.topicsTitle {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.topic {
+  margin-top: 20px;
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import CommunityBlock from "../Components/CommunityBlock";
-import CommunityLink from "../Components/CommunityLink";
 import Tile from "../Components/Tile";
 
 const Home: React.FunctionComponent = () => {
