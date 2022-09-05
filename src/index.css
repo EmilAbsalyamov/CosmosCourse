@@ -108,6 +108,35 @@ a {
   margin-top: 20px;
 }
 
+.courseTitle {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
 .course {
   margin-top: 20px;
+}
+
+.homeButtonBlock {
+  position: fixed;
+  right: 250px;
+  top: 20px;
+  width: 100px;
+}
+
+.homeButton {
+  width: 100px;
+  height: 30px;
+}
+
+.switchCourseButtons {
+  display: flex;
+  margin-top: 30px;
+  width: 450px;
+  justify-content: space-around;
+}
+
+.switchButton {
+  width: 200px;
+  height: 40px;
 }

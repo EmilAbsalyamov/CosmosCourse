@@ -13,8 +13,13 @@ const Router: React.FunctionComponent<IProps> = ({ courses }) => {
   const coursesRoutes = courses.map((course) => {
     return (
       <Route
-        path={`course/${course.name}`}
-        element={<Course courseData={course} />}
+        path={`course/${course.id}`}
+        element={
+          <Course
+            courseData={course}
+            isLastCourse={courses[courses.length - 1].id === course.id}
+          />
+        }
       />
     );
   });
@@ -22,7 +27,7 @@ const Router: React.FunctionComponent<IProps> = ({ courses }) => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home firstCourse={courses[0]} />} />
+        <Route path="/" element={<Home />} />
         <Route path="courses" element={<Courses courses={courses} />} />
         <Route path="earning" element={<Earning />} />
         {coursesRoutes}

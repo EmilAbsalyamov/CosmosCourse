@@ -1,13 +1,8 @@
 import React from "react";
 import CommunityBlock from "../components/CommunityBlock";
 import Tile from "../components/Tile";
-import { ICourse } from "../types";
 
-interface IProps {
-  firstCourse: ICourse;
-}
-
-const Home: React.FunctionComponent<IProps> = ({ firstCourse }) => {
+const Home: React.FunctionComponent = () => {
   return (
     <div className="container">
       <div className="header">
@@ -17,7 +12,7 @@ const Home: React.FunctionComponent<IProps> = ({ firstCourse }) => {
         </div>
       </div>
       <div className="buttonsRow">
-        <Tile mode="course" firstCourse={firstCourse} />
+        <Tile mode="course" />
         <Tile mode="courses" />
       </div>
       <div>
