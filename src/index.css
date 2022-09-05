@@ -96,18 +96,18 @@ a {
   color: black;
 }
 
-.topicsList {
+.coursesList {
   width: 1000px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.topicsTitle {
+.coursesTitle {
   font-size: 25px;
   margin-top: 20px;
 }
 
-.topic {
+.course {
   margin-top: 20px;
 }

@@ -8,14 +8,14 @@
   },
   {
     "id": 2,
-    "name": "wallets",
+    "name": "payments",
     "subtitle": "",
     "mainInfo": "",
     "videoUrls": ["", "", ""]
   },
   {
     "id": 3,
-    "name": "wallets",
+    "name": "staking",
     "subtitle": "",
     "mainInfo": "",
     "videoUrls": ["", "", ""]

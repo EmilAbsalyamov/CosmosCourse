@@ -1,17 +1,19 @@
 import { NavLink } from "react-router-dom";
+import { ICourse } from "../types";
 
-type TileMode = "topics" | "earning" | "course";
+type TileMode = "courses" | "earning" | "course";
 
 interface IProps {
   mode: TileMode;
+  firstCourse?: ICourse;
 }
 
 const tilesData = {
-  topics: {
+  courses: {
     name: "Выбрать высоту",
     description:
       "Если ты бывалый космонавт ты можешь пробежаться по темам и выбрать интересующий тебя вопрос",
-    url: "/topics",
+    url: "/courses",
   },
   earning: {
     name: "Заработок в Космосе",
@@ -27,16 +29,16 @@ const tilesData = {
   },
 };
 
-const Tile: React.FunctionComponent<IProps> = ({ mode }) => {
+const Tile: React.FunctionComponent<IProps> = ({ mode, firstCourse }) => {
   let name: string = "";
   let url: string = "";
   let description: string = "";
 
   switch (mode) {
-    case "topics":
-      name = tilesData.topics.name;
-      description = tilesData.topics.description;
-      url = tilesData.topics.url;
+    case "courses":
+      name = tilesData.courses.name;
+      description = tilesData.courses.description;
+      url = tilesData.courses.url;
       break;
     case "earning":
       name = tilesData.earning.name;
@@ -47,7 +49,7 @@ const Tile: React.FunctionComponent<IProps> = ({ mode }) => {
     case "course":
       name = tilesData.course.name;
       description = tilesData.course.description;
-      url = tilesData.course.url;
+      url = `${tilesData.course.url}/${firstCourse?.name}`;
   }
 
   return (
