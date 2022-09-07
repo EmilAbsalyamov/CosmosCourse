@@ -1,8 +1,13 @@
 import React from "react";
-import CommunityBlock from "../components/CommunityBlock";
 import Tile from "../components/Tile";
+import { ICommunityData } from "../types";
+import Footer from "../components/Footer";
 
-const Home: React.FunctionComponent = () => {
+interface IProps {
+  community: ICommunityData;
+}
+
+const Home: React.FunctionComponent<IProps> = ({ community }) => {
   return (
     <div className="container">
       <div className="header">
@@ -18,10 +23,7 @@ const Home: React.FunctionComponent = () => {
       <div>
         <Tile mode="earning" />
       </div>
-      <div className="communityBlocks">
-        <CommunityBlock type="chats" />
-        <CommunityBlock type="videoContent" />
-      </div>
+      <Footer community={community} />
     </div>
   );
 };

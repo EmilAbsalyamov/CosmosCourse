@@ -1,15 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Course from "../Pages/Course";
-import Earning from "../Pages/Earning";
-import Home from "../Pages/Home";
-import { ICourse } from "../types";
-import Courses from "../Pages/Courses";
+import Course from "../pages/Course";
+import Earning from "../pages/Earning";
+import Home from "../pages/Home";
+import { ICommunityData, ICourse } from "../types";
+import Courses from "../pages/Courses";
 
 interface IProps {
   courses: ICourse[];
+  community: ICommunityData;
 }
 
-const Router: React.FunctionComponent<IProps> = ({ courses }) => {
+const Router: React.FunctionComponent<IProps> = ({ courses, community }) => {
   const coursesRoutes = courses.map((course) => {
     return (
       <Route
@@ -18,6 +19,8 @@ const Router: React.FunctionComponent<IProps> = ({ courses }) => {
           <Course
             courseData={course}
             isLastCourse={courses[courses.length - 1].id === course.id}
+            courses={courses}
+            community={community}
           />
         }
       />
@@ -27,8 +30,11 @@ const Router: React.FunctionComponent<IProps> = ({ courses }) => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="courses" element={<Courses courses={courses} />} />
+        <Route path="/" element={<Home community={community} />} />
+        <Route
+          path="courses"
+          element={<Courses courses={courses} community={community} />}
+        />
         <Route path="earning" element={<Earning />} />
         {coursesRoutes}
       </Routes>
