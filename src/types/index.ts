@@ -5,3 +5,18 @@ export interface ICourse {
   mainInfo: string;
   videoUrls: string[];
 }
+
+export interface ICommunityChat {
+  name: string;
+  link: string;
+}
+
+export interface ICommunityYouTubeChannels {
+  name: string;
+  link: string;
+}
+
+export interface ICommunityData {
+  chats: ICommunityChat[];
+  youTube: ICommunityYouTubeChannels[];
+}
