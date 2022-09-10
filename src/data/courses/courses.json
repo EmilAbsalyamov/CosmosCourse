@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "name": "wallets",
-    "subtitle": "",
-    "mainInfo": "Что такое Cosmos? Cosmos – это не блокчейн, а децентрализованная сеть независимых и взаимодействующих между собой блокчейнов, которые в экосистеме называют зонами. Эти зоны работают на Tendermint и взаимодействуют друг с другом через IBC благодаря хабам.",
-    "videoUrls": ["", "", ""]
+    "name": "cosmos",
+    "videoIds": ["lOSA1xyJd-I", "lOSA1xyJd-I", "lOSA1xyJd-I"],
+    "screenshotsUrls": []
   },
   {
     "id": 2,
-    "name": "payments",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "name": "staking",
+    "videoIds": ["lOSA1xyJd-I", "lOSA1xyJd-I", "lOSA1xyJd-I"],
+    "screenshotsUrls": [
+      "https://pics.st/dd8/fc4/1e562fc4.png",
+      "https://pics.st/341/43e/82b34126.png",
+      "https://pics.st/c26/79c/9979c26d.png",
+      "https://pics.st/d4e/267/8b0fec7c.png",
+      "https://pics.st/d4e/267/8b0fec7c.png",
+      "https://pics.st/d4e/267/8b0fec7c.png",
+      "https://pics.st/d4e/267/8b0fec7c.png"
+    ]
   },
   {
     "id": 3,
-    "name": "staking",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "name": "payments",
+    "videoUrls": [],
+    "screenshotsUrls": []
   },
   {
     "id": 4,
     "name": "wallets",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "videoUrls": [],
+    "screenshotsUrls": []
   },
   {
     "id": 5,
     "name": "wallets",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "videoUrls": [],
+    "screenshotsUrls": []
   },
   {
     "id": 6,
     "name": "wallets",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "videoUrls": [],
+    "screenshotsUrls": []
   },
   {
     "id": 7,
     "name": "wallets",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "videoUrls": [],
+    "screenshotsUrls": []
   },
   {
     "id": 8,
     "name": "wallets",
-    "subtitle": "",
-    "mainInfo": "",
-    "videoUrls": ["", "", ""]
+    "videoUrls": [],
+    "screenshotsUrls": []
   }
 ]

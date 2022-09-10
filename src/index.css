@@ -171,5 +171,61 @@ a {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+
+.screenShotsModule {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid yellow;
+  margin-left: -20px;
+}
+
+.screenShotsList {
+  margin-top: 10px;
+}
+
+.screenShotPreview {
+  margin-right: 15px;
+}
+
+.activeScreenShotPreview {
+  border: 2px solid red;
+}
+
+.switchScreenshotArrow {
+  height: 450px;
+  width: 45px;
+  background-color: aquamarine;
+  display: flex;
   align-items: center;
+}
+
+.screenShotsBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.screenShotsList {
+  display: flex;
+  justify-content: center;
+  width: 850px;
+  overflow: auto;
+}
+
+.videoBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.showAssetsButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  padding: 8px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
