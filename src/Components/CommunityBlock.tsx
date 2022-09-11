@@ -21,8 +21,9 @@ const CommunityBlock: React.FunctionComponent<IProps> = ({ type, data }) => {
       />
     );
   });
+
   return (
-    <div>
+    <div className="communityBlock">
       <div>{type === "chats" ? CHATS_TITLE : VIDEO_CONTENT_TITLE}</div>
       <div>{links}</div>
     </div>

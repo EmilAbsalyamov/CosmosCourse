@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
+  background: url(./assets/mainBg.jpeg);
+  color: #fff;
+  font-family: Roboto;
 }
 
 code {
@@ -23,7 +26,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid black;
 }
 
 .header {
@@ -34,6 +36,7 @@ a {
 
 .appName {
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .appDiscription {
@@ -42,12 +45,12 @@ a {
 
 .buttonsRow {
   width: 100%;
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
 }
 
 .buttonBlock {
+  box-sizing: border-box;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -55,9 +58,9 @@ a {
   justify-content: space-between;
   font-size: 20px;
   margin-top: 30px;
-  border: 2px solid blue;
+  background: linear-gradient(78.06deg, #6836d0 1.14%, #05bdfc 98.88%);
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .buttonDiscription {
@@ -70,8 +73,22 @@ a {
   height: 50px;
   border-radius: 10px;
   text-decoration: none;
-  color: black;
-  border: 2px solid black;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(9, 99, 121, 1) 66%,
+    rgba(0, 255, 190, 1) 100%
+  );
+  color: #fff;
+}
+
+.button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 97, 1) 53%,
+    rgba(164, 0, 255, 1) 100%
+  );
 }
 
 .communityBlocks {
@@ -79,21 +96,40 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
-  border: 2px solid pink;
 }
 
 .communityBlock {
-  width: 200px;
+  background: linear-gradient(78.06deg, #6836d0 1.14%, #05bdfc 98.88%);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.communityLink {
+  width: 300px;
   display: flex;
   margin-top: 10px;
-  border: 2px solid grey;
   border-radius: 10px;
   padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(9, 99, 121, 1) 66%,
+    rgba(0, 255, 190, 1) 100%
+  );
+}
+
+.communityLink:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 97, 1) 53%,
+    rgba(164, 0, 255, 1) 100%
+  );
 }
 
 .communityName {
   margin-left: 5px;
-  color: black;
+  color: #fff;
 }
 
 .coursesList {
@@ -105,7 +141,6 @@ a {
 
 .coursesModule {
   width: 20%;
-  border: 2px solid red;
   border-radius: 20px;
   padding: 10px;
   max-height: 400px;
@@ -141,8 +176,25 @@ a {
 }
 
 .homeButton {
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 35px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(217, 223, 16, 1) 53%,
+    rgba(5, 144, 109, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.homeButton:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 97, 1) 53%,
+    rgba(164, 0, 255, 1) 100%
+  );
+  color: #fff;
 }
 
 .switchCourseButtons {
@@ -155,6 +207,23 @@ a {
 .switchButton {
   width: 200px;
   height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(217, 223, 16, 1) 53%,
+    rgba(5, 144, 109, 1) 100%
+  );
+}
+
+.switchButton:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 97, 1) 53%,
+    rgba(164, 0, 255, 1) 100%
+  );
+  color: #fff;
 }
 
 .courseContentContainer {
@@ -167,17 +236,22 @@ a {
   box-sizing: border-box;
   width: 75%;
   margin-right: 15px;
-  border: 2px solid red;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+.courseTextContent {
+  background: linear-gradient(78.06deg, #6836d0 1.14%, #05bdfc 98.88%);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
 .screenShotsModule {
   display: flex;
   justify-content: space-between;
-  border: 2px solid yellow;
   margin-left: -20px;
 }
 
@@ -221,11 +295,26 @@ a {
 
 .showAssetsButton {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 150px;
-  padding: 8px;
-  border: 2px solid blue;
+  width: 200px;
+  padding: 8px 32px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(217, 223, 16, 1) 53%,
+    rgba(5, 144, 109, 1) 100%
+  );
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.showAssetsButton:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 97, 1) 53%,
+    rgba(164, 0, 255, 1) 100%
+  );
+  color: #fff;
 }

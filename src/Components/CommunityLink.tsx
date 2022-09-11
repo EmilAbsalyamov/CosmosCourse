@@ -11,7 +11,7 @@ const CommunityLink: React.FunctionComponent<IProps> = ({
 }) => {
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <div className="communityBlock">
+      <div className="communityLink">
         <div>
           <img src={icon} alt="" />
         </div>
