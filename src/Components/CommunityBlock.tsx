@@ -16,7 +16,11 @@ const CommunityBlock: React.FunctionComponent<IProps> = ({ type, data }) => {
     return (
       <CommunityLink
         name={link.name}
-        icon="https://pics.st/07b/c32/4a000ac3.png"
+        icon={
+          type === "chats"
+            ? "https://pics.st/4d0/074/440c91b3.png"
+            : "https://pics.st/ec1/c1d/bec1d1bb.png"
+        }
         link={link.link}
       />
     );
