@@ -10,18 +10,21 @@ interface IProps {
 const Home: React.FunctionComponent<IProps> = ({ community }) => {
   return (
     <div className="container">
-      <div className="header">
-        <div className="appName">Comsos Course</div>
-        <div className="appDiscription">
-          Тут ты сможешь узнать про экосистему космос и как в ней существовать.
+      <div className="content">
+        <div className="header">
+          <div className="appName">Comsos Course</div>
+          <div className="appDiscription">
+            Тут ты сможешь узнать про экосистему космос и как в ней
+            существовать.
+          </div>
         </div>
-      </div>
-      <div className="buttonsRow">
-        <Tile mode="course" />
-        <Tile mode="courses" />
-      </div>
-      <div>
-        <Tile mode="earning" />
+        <div className="buttonsRow">
+          <Tile mode="course" />
+          <Tile mode="courses" />
+        </div>
+        <div>
+          <Tile mode="earning" />
+        </div>
       </div>
       <Footer community={community} />
     </div>

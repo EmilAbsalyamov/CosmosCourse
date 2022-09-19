@@ -5,9 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  background: url(./assets/mainBg.jpeg);
+  background: rgb(25, 6, 74);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 6, 74, 1) 53%,
+    rgba(231, 7, 209, 1) 100%
+  );
   color: #fff;
   font-family: Roboto;
 }
@@ -23,6 +29,15 @@ a {
 
 .container {
   width: 1240px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +73,7 @@ a {
   justify-content: space-between;
   font-size: 20px;
   margin-top: 30px;
-  background: linear-gradient(78.06deg, #6836d0 1.14%, #05bdfc 98.88%);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 20px;
 }
@@ -99,7 +114,7 @@ a {
 }
 
 .communityBlock {
-  background: linear-gradient(78.06deg, #6836d0 1.14%, #05bdfc 98.88%);
+  background: rgba(0, 0, 0, 0.5);
   padding: 15px;
   border-radius: 10px;
 }
@@ -170,7 +185,7 @@ a {
 
 .homeButtonBlock {
   position: fixed;
-  right: 250px;
+  right: 150px;
   top: 20px;
   width: 100px;
 }
@@ -243,7 +258,8 @@ a {
 }
 
 .courseTextContent {
-  background: linear-gradient(78.06deg, #6836d0 1.14%, #05bdfc 98.88%);
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 19px;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 15px;
@@ -270,9 +286,31 @@ a {
 .switchScreenshotArrow {
   height: 450px;
   width: 45px;
-  background-color: aquamarine;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 19, 36, 1) 0%,
+    rgba(217, 223, 16, 1) 53%,
+    rgba(5, 144, 109, 1) 100%
+  );
   display: flex;
   align-items: center;
+}
+
+.switchScreenshotArrow.left {
+  border-radius: 10px 0 0 10px;
+}
+
+.switchScreenshotArrow.right {
+  border-radius: 0 10px 10px 0;
+}
+
+.switchScreenshotArrow:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 97, 1) 53%,
+    rgba(164, 0, 255, 1) 100%
+  );
 }
 
 .screenShotsBlock {

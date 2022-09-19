@@ -29,7 +29,7 @@ const CourseScreenShots: React.FunctionComponent<IProps> = ({
   return (
     <div className="screenShotsModule">
       <div
-        className="switchScreenshotArrow"
+        className="switchScreenshotArrow left"
         onClick={() =>
           currentScreenShot === 0
             ? setCurrentScreenShot(screenShotsUrls.length - 1)
@@ -54,7 +54,7 @@ const CourseScreenShots: React.FunctionComponent<IProps> = ({
       </div>
 
       <div
-        className="switchScreenshotArrow"
+        className="switchScreenshotArrow right"
         onClick={() =>
           currentScreenShot === screenShotsUrls.length - 1
             ? setCurrentScreenShot(0)

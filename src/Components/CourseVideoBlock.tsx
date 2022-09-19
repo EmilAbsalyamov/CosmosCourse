@@ -7,7 +7,7 @@ interface IProps {
 const CourseVideoBlock: React.FunctionComponent<IProps> = ({ videoIds }) => {
   const opts: YouTubeProps["opts"] = {
     height: "490",
-    width: "900",
+    width: "890",
     playerVars: {
       autoplay: 0,
     },
